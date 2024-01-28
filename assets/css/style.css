@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fonte: 'Inter', sans-serif;
+    --corBtn1: #001427;
+    --corBtn2: #8380B6;
+    --corBtn3: #3E5641;
+    --corFundo: #79B4A9;
+    --corFonte: #242038;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height:100%;
+    background-color: var(--corFundo);
+    font-family: var(--fonte);
+}
+
+/******** CONTAINER ***********/
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+/******** CABEÇALHO ***********/
+
+.cabecalho {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cabecalho > h1 {
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--corFonte);
+}
+
+.cabecalho > a > img {
+    padding: 5px;
+}
+
+/******** SECTION BOX-INPUT ***********/
+.box-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#texto::placeholder {
+    color: var(--corFonte);
+    font-family: var(--fonte);
+}
+
+.input > p{
+    margin-top: 50px;
+    font-size: 18px;
+    color: var(--corFonte);
+}
+
+#texto {
+    width: 500px;
+    height: 250px;
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/******** BOTÕES ***********/
+
+.btn {
+    width: 328px;
+    padding: 24px;
+    margin-top: 30px;
+    border-radius: 24px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-criptografia {
+    background-color: var(--corBtn1);
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-criptografia:hover {
+    background-color: rgb(27, 28, 31);
+    transition: 0.2s;
+    color: white;
+}
+
+.btn-descriptografia {
+    background-color: var(--corBtn2);
+    color: black;
+}
+
+.btn-descriptografia:hover {
+    background-color: rgb(182, 146, 146);
+    transition: 0.2s;
+
+}
+
+/******** SECTION BOX-RETORNO-TEXTO ***********/
+
+.box-retorno-texto {
+    text-align: center;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    box-shadow: 2px 2px 1px 0.5px;
+    border-radius: 20px;
+}
+
+#retorno-texto {
+    width: 500px;
+    height: 150px;
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#texto-mensagem {
+    color: rgb(29, 27, 27);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+#digite-texto {
+    color: rgb(29, 27, 27);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+/******** BOTÃO COPIAR ***********/
+
+.copiar {
+    width: 328px;
+    padding: 24px;
+    margin-top: 100px;
+    border-radius: 24px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
